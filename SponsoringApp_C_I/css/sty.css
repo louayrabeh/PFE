@@ -1,0 +1,180 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+color:red;
+}
+
+/*Content*/
+.content {
+	color: #EEEEEE;
+	text-shadow: 0 1px 0 black;
+	flex: 1 0 auto;
+
+}
+
+
+/*General CSS*/
+.content-title {
+	padding-top: 20px;
+	margin-left: 2%;
+	font-size: 50px;
+	font-weight: 900;
+	color: black ;
+	
+}
+
+#about-title, #skills-title, #lang-title, #frame-title, #port-title, #proj-cards, #contact-title, #contact-form {
+	visibility: hidden;
+}
+
+	/*Nav Bar*/
+	#logo-img {
+		width: 60px;
+		height: 60px;
+		
+	}
+
+
+	.header-text {
+		color: #212121;
+		font-weight: 650;
+	}
+
+	/*Content*/
+
+	/*Home*/
+
+	#home {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-size: 19px;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		height: fit-content;
+	
+	}
+
+	#home .name h5 {
+		font-weight: 900;
+		font-size: 50px;
+		margin-top: 100px;
+	}
+
+	#home .description h5 {
+		font-weight: 700;
+	}
+
+	/*About*/
+	#about {
+		height: fit-content;
+	}
+
+	#comp-courses > li, #elen-courses > li {
+		margin-left: 3%;
+		margin-top: 1%;
+	}
+
+	#comp-courses > li, #elen-courses > li{
+		opacity: 0;
+	}
+
+	#comp-title, #elen-title {
+		font-weight: 900;
+		visibility: hidden;
+		color : crimson;
+	}
+
+	#comp-courses, #elen-courses {
+		font-weight: 500;
+	}
+
+
+	/*services*/
+	#portfolio
+	{
+		height: fit-content;
+	}
+	.card-reveal {
+		color: #212121;
+		text-shadow: none;
+        
+	}
+	
+	.card-content {
+		text-shadow: none;
+		
+	}
+
+	/*Contact Me*/
+	#contact {
+		height: 550px;
+	}
+
+	.glossy-back {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.submit-btn {
+		margin-bottom: 5%;
+	}
+
+	/*Footer*/
+	.footer-copyright {
+		min-height: 60px;
+	}
+
+
+	/*about*/
+	@media screen and (max-width: 681px) {
+		.skill-languages, .skill-frameworks {
+			flex-direction: column;
+			align-items: center;
+		}
+		#lang-scolumn, #frame-scolumn {
+			margin-top: -10px;
+		}
+
+		#skills {
+			min-height:fit-content;
+		}
+	}
+
+	/*quereis*/
+
+	@media screen and (max-width: 600px){
+		#portfolio {
+			height: fit-content;
+		}
+	}
+
+	@media screen and (min-width: 601px) {
+		#portfolio {
+			height: fit-content;
+		}
+	}
+
+	@media (min-width: 601px) and (max-width: 992px) {
+		.proj-img {
+			height: 200px;
+		}
+	}
+
+	/*Logo*/
+	@media screen and (min-width: 993px) {
+		#logo-img {
+			margin-left: 20px;
+		}
+
+		.proj-img {
+			height: 200px;
+			width: calc(40vw);
+		}
+
+	}
+
+
+

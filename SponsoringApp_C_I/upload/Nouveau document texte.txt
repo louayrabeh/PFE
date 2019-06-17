@@ -1,0 +1,67 @@
+<div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" style="text-align:center" id="dataTable" width="100%" cellspacing="0" >
+                <thead>
+                  <tr>  
+                     <th>ID</th>  
+                     <th>Nom</th>  
+                     <th>Prénom</th>  
+                     <th>Organisme</th> 
+                     <th>Adresse</th>
+                     <th>Email</th>
+                     <th>IMAGE</th>
+                     <th>VALIDER</th>
+                     <th>SUPPRIMER</td>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                  <?php
+               foreach($fetch_data->result() as $row)  
+                {
+                  if ($row->isactive == "1") { ?>
+                <tr id="<?php echo $row->idSpons; ?>" class="tri" onmouseover="overtr(this)" onmouseout="notovertr(this)">  
+                
+                     <td><?php echo $row->idSpons; ?></td>  
+                     <td><?php echo $row->nomSpons; ?></td>  
+                     <td><?php echo $row->prenomSpons; ?></td>  
+                     <td><?php echo $row->organismeSpons; ?></td> 
+                     <td><?php echo $row->adrSpons; ?></td>
+                     <td><?php echo $row->emailSpons; ?></td>
+                  
+            
+                     
+                     <td data-toggle="modal" data-target="#myModal" style="cursor:grab">
+                       <?php echo '<img src="'.base_url().'upload/'.$row->img.'" class="img-thumbnail" /> ' ?>
+                      </td>
+                      <td><input type="button" value="activé" id="<?php  echo $row->idSpons; ?>" class="activerbutt btn btn-info"/></td>
+                     <td><button href="#" id="<?php echo $row->idSpons; ?>" class="deletebutt btn btn-info">Supprimer</button></td>
+                </tr>  
+                  <?php  }  
+                  else {
+                    ?>
+                <tr id="<?php echo $row->idSpons; ?>" class="tri" onmouseover="overtr(this)" onmouseout="notovertr(this)">  
+                
+                     <td><?php echo $row->idSpons; ?></td>  
+                     <td><?php echo $row->nomSpons; ?></td>  
+                     <td><?php echo $row->prenomSpons; ?></td>  
+                     <td><?php echo $row->organismeSpons; ?></td> 
+                     <td><?php echo $row->adrSpons; ?></td>
+                     <td><?php echo $row->emailSpons; ?></td>
+                  
+            
+                     
+                     <td data-toggle="modal" data-target="#myModal" style="cursor:grab;height:80px;width:80px">
+                       <?php echo '<img src="'.base_url().'upload/'.$row->img.'" class="img-thumbnail"/> ' ?>
+                      </td>
+                      
+                     <td><input type="button" value="désactivé" id="<?php echo $row->idSpons; ?>" class="activerbutt btn btn-info"/></td>
+                     <td><button href="#" id="<?php echo $row->idSpons; ?>" class="deletebutt btn btn-info">Supprimer</button></td>
+                </tr>  
+                  <?php
+                  }   
+                }
+                ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
