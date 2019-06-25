@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+   >
+
+
+
+
+  <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/white"></android.support.v7.widget.RecyclerView>
+
+ <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/cus">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Découvrir des événements"
+            android:textSize="20dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/colorone"
+            android:gravity="start|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

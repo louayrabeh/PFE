@@ -10,13 +10,11 @@ $con = mysqli_connect($host,$user,$password,$db_name);
 $response = array();
 
 
-$idOrg = $_POST['idOrg'];
-$query="SELECT * FROM  evenement WHERE idOrg='".$idOrg."';";
+$query="SELECT * FROM  sponsor ";
 
 $result=mysqli_query($con,$query);
 
 if(mysqli_num_rows($result) > 0)
-
 {
 	while($row = mysqli_fetch_assoc($result))
 	{

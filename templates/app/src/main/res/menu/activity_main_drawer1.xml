@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_acceuil"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Acceuil" />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_person"
+            android:title="Modifier profil" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_event_"
+            android:title="Mes événements" />
+        <item
+            android:id="@+id/nav_Messages"
+            android:icon="@drawable/ic_message"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_deconnect"
+            android:icon="@drawable/ic_deconnect"
+            android:title="Deconnexion" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="A propos" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Conditions d'utilisation" />
+        </menu>
+    </item>
+
+</menu>

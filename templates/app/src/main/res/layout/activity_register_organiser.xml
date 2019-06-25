@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterOrganiser">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/caviardreams"
+            android:text="Inscrivez-vous"
+            android:textAlignment="center"
+            android:textColor="@color/colortwo"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bginputlogin"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:fontFamily="@font/caviardreams"
+            android:hint="Prenom"
+            android:inputType="text" />
+
+
+
+        <EditText
+            android:id="@+id/editTextprenom"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bginputlogin"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:fontFamily="@font/caviardreams"
+            android:hint="Nom"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bginputlogin"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:fontFamily="@font/caviardreams"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/caviardreams"
+            android:background="@drawable/bginputlogin"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:hint="Mot de passe"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/adress"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/caviardreams"
+            android:background="@drawable/bginputlogin"
+            android:hint="Adresse"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/te"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/caviardreams"
+            android:background="@drawable/bginputlogin"
+            android:layout_gravity="center_horizontal"
+            android:hint="Téléphone"
+            android:inputType="number"
+            android:textAlignment="center"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/centre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/caviardreams"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="20"
+                android:padding="16dp"
+                android:text="centre d'intérêt"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioCateg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:checked="true"
+                    android:text="Sports" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Business" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Entertainment" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonart"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Art" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFASH"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLife"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Lifestyle" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonpol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Education" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/connectt"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Already Registered?\nLogin Here"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

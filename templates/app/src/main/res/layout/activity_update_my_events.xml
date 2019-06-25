@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateMyEvents"
+    android:orientation="horizontal">
+
+    <include
+        layout="@layout/app_bar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/imgEvent"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/mypic"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorone"
+            android:id="@+id/nomEvent"
+            android:fontFamily="@font/caviardreams"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/heureEvent"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/lieuEvent"
+            android:textSize="20dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/descriptionEvent"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/cat"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/type"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/datedeb"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/eventid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caviardreams"
+            android:text=""
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_below="@id/titreopportunite"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorone"
+            android:layout_marginBottom="10dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/datefin"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/descOrg"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/siteOrg"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/lienfb"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caviardreams"
+            android:textColor="@color/colorone"
+            android:id="@+id/budget"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/enregistre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="save" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgtext"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/upl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="edit picture"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SponsoRise</string>
+    <string name="textView">Welcome</string>
+    <string name="button">Button</string>
+    <string name="welcome">welcome</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="Myip">"192.168.43.45"</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">HelloSponsor!</string>
+    <string name="slide_1_desc">Notre application vous offre un marché de parrainage, pour les organisateurs et les sponsors.</string>
+
+    <string name="slide_2_title">Organisateur</string>
+    <string name="slide_2_desc">Trouver des sponsors et des partenaires
+ pour vos événements.</string>
+
+    <string name="slide_3_title">Sponsor</string>
+    <string name="slide_3_desc">Trouver des événements selon vos intérêts.
+    Promouvoir vos marques et contribuer à des événements</string>
+
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Acceuil</string>
+    <string name="my_profile">Mon profil</string>
+    <string name="events">Mes événements</string>
+    <string name="msg">Messages</string>
+    <string name="nav_about_us">About Us</string>
+
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Conditions d\'utilisation</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="Condi">Conditions d\'utilisation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="make_an_order">Make an order</string>
+    <string name="dialog_title">Items available in a shop</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+    <string name="title_activity_main_princip1">MainPrincip1</string>
+    <string name="title_activity_tabbed_princip">TabbedPrincip</string>
+
+
+    <string name="facebook_app_id">2191666234250752</string>
+    <string name="fb_login_protocol_scheme">fb2191666234250752</string>
+
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:id="@+id/card"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+           >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_toRightOf="@id/imageView"
+                android:text="App"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/textViewShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTitle"
+                android:gravity="end"
+                android:textAlignment="textStart"
+                android:maxLines="2"
+                android:maxLength="60"
+                android:layout_toRightOf="@id/imageView"
+                android:text="13.3 Inch, 256 GB"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/textViewlieu"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewShortDesc"
+                android:layout_toRightOf="@id/imageView"
+                android:gravity="end"
+                android:text="4.7"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/textViewheure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewlieu"
+                android:textAlignment="textStart"
+            android:gravity="end"
+                android:layout_toRightOf="@id/imageView"
+                android:text="INR 56990"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/categ"
+                android:gravity="start"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:text="cat"/>
+
+
+            <TextView
+                android:id="@+id/datedebevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewlieu"
+                android:gravity="center_horizontal"
+                android:text="4.7"
+                android:visibility="invisible"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/datefinevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datedebevent"
+                android:gravity="center_horizontal"
+                android:text="4.7"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+
+
+            <TextView
+                android:id="@+id/typee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categ"
+                android:gravity="center_horizontal"
+                android:text="4.7"
+                android:textStyle="normal"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/lien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:fontFamily="cursive"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_below="@id/titrelien"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/descorg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/caviardreams"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_below="@id/aproposorg"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/siteorg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/caviardreams"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:autoLink="all"
+                android:clickable="true"
+                android:maxLength="1000"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/valbudg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/caviardreams"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:maxLength="1000"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/idev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/caviardreams"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:maxLength="1000"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

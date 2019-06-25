@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:Tools="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+    >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/drawerbar"
+                />
+        </android.support.design.widget.AppBarLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Créer un événement"
+    android:fontFamily="@font/caviardreams"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/colorone"
+    android:textSize="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/creer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ajout"
+            android:layout_marginBottom="15dp"
+            />
+
+
+</LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:fontFamily="@font/caviardreams"
+                android:padding="16dp"
+                android:text="Titre"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="120"
+                android:fontFamily="@font/caviardreams"
+                android:padding="16dp"
+                android:textColor="#181737"
+                android:textColorHint="#181737"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/emil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/caviardreams"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Catégorie"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioCateg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:checked="true"
+                    android:text="Sports" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Business" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Entertainment" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonart"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Art" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFASH"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Fashion" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonLife"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Lifestyle" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonpol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Education" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:fontFamily="@font/caviardreams"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Type"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonconf"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Conference" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtoncamp"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Camp ,Trip" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Concert" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonfes"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_height="wrap_content"
+                    android:text="Festival" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonrace"
+                    android:fontFamily="@font/caviardreams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Race ,rally" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonmeet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Seminar ,meeting" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonmecomp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/caviardreams"
+                    android:text="Competition" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/caviardreams"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Adresse"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+           <EditText
+               android:id="@+id/adresse"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#0000"
+               android:gravity="center_horizontal"
+               android:maxLength="12"
+               android:padding="16dp"
+               android:fontFamily="@font/caviardreams"
+               android:textColorHint="#181737"
+               android:textSize="16dp"
+               />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Heure"
+                android:fontFamily="@font/caviardreams"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:fontFamily="@font/caviardreams"
+                android:textColorHint="#181737"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:fontFamily="@font/caviardreams"
+                android:gravity="left"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Date début"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="left"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:fontFamily="@font/caviardreams"
+                android:text="Date fin"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/fin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/caviardreams"
+                android:gravity="left"
+                android:background="#0000"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:hint="exemple : 12/07/2019"
+                android:textColorHint="#181737"
+                android:textSize="16dp" />
+
+
+
+            <EditText
+                android:id="@+id/debut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:background="#0000"
+                android:fontFamily="@font/caviardreams"
+                android:maxLength="12"
+                android:gravity="left"
+                android:textColorHint="#181737"
+                android:textSize="16dp"/>
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/caviardreams"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Budget"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/budg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/caviardreams"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColorHint="#181737"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/dsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/caviardreams"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/caviardreams"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColorHint="#181737"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/vsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:fontFamily="@font/caviardreams"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:text="Lien facebook"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/lien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:fontFamily="@font/caviardreams"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:padding="16dp"
+                android:textColorHint="#181737"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:background="#dad8d8"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="à propos de l'organisateur"
+            android:fontFamily="@font/caviardreams"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorone"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/descorg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:fontFamily="@font/caviardreams"
+                android:hint="Description "
+                android:padding="16dp"
+                android:textColorHint="#dad8d8"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dad8d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:fontFamily="@font/caviardreams"
+                android:gravity="center_horizontal"
+                android:maxLength="12"
+                android:hint="Website "
+                android:padding="16dp"
+                android:textColorHint="#dad8d8"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/enr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/buttonsuiv"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

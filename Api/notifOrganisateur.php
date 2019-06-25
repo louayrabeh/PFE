@@ -1,5 +1,4 @@
 <?php
-
 $user="root";
 $password="";
 $host="localhost";
@@ -11,7 +10,10 @@ $response = array();
 
 
 $idOrg = $_POST['idOrg'];
-$query="SELECT * FROM  evenement WHERE idOrg='".$idOrg."';";
+
+
+
+$query="SELECT * FROM notifications WHERE idOrg='".$idOrg."';";
 
 $result=mysqli_query($con,$query);
 
@@ -43,11 +45,4 @@ function utf8ize($d) {
 
     return $d;
 }
-
 ?>
-
-
-
-
-
-

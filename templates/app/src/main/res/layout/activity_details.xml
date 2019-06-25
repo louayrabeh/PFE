@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Details"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mlayout"
+    android:background="@android:color/white"
+    android:layout_marginBottom="10dp">
+
+    <Button
+        android:id="@+id/backbutt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:gravity="start" />
+
+    <ImageView
+        android:id="@+id/image55"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+      />
+
+</LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="35dp"
+        app:srcCompat="@drawable/ic_event_" />
+
+    <TextView
+        android:id="@+id/textViewTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mlayout"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="App"
+        android:textSize="30dp"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textViewShortDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxLines="1000"
+        android:text="13.3 Inch, 256 GB"
+        android:layout_marginBottom="10dp"
+        android:maxLength="1000"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView7"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/textViewlieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@id/textViewheure"
+        android:gravity="center_horizontal"
+        android:text="4.7"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/datedebevent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewlieu"
+        android:gravity="center_horizontal"
+        android:text="4.7"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/datefinevent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datedebevent"
+        android:gravity="center_horizontal"
+        android:text="4.7"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/categ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datefinevent"
+        android:gravity="center_horizontal"
+        android:text="4.7"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/typee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categ"
+        android:gravity="center_horizontal"
+        android:text="4.7"
+        android:textStyle="normal"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewheure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+     android:layout_below="@id/textViewTitre"
+        android:layout_marginBottom="10dp"
+        android:text="INR 56990"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="115dp"
+        android:textSize="20dp"
+        android:layout_below="@id/textViewlieu"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorone"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/budg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Budget"
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/textViewShortDesc"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorone"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/valbudg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:layout_below="@id/budg"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/titrelien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:text="Suivre sur facebook"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/valbudg"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/lien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:clickable="true"
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:maxLines="200"
+        android:text="linkfb"
+        android:layout_below="@id/titrelien"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/aproposorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="à propos organisateur"
+        android:layout_below="@id/lien"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/descorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@id/aproposorg"
+        android:gravity="start"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/siteorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:maxLines="200"
+        android:autoLink="all"
+        android:clickable="true"
+        android:maxLength="1000"
+        android:text="link"
+        android:layout_below="@id/descorg"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/sponsors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:text="Nos sponsors"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_below="@id/siteorg"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorone"
+        android:layout_marginBottom="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerspons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sponsors"
+        android:layout_marginBottom="15dp"/>
+
+
+
+    <TextView
+        android:id="@+id/titreopportunite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:text="Opportunités de sponsoring"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:layout_below="@id/recyclerspons"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorone"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/eventid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams"
+        android:text=""
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/titreopportunite"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorone"
+        android:layout_marginBottom="10dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreopportunite"
+        android:layout_marginBottom="15dp"/>
+
+
+</RelativeLayout>
+
+</ScrollView>

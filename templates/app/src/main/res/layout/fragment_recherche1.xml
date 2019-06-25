@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabbedPrincip"
+    >
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/layoo">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/ic_outline_search_24px"
+            android:id="@+id/show1"
+        />
+
+
+        <TextView
+            android:id="@+id/it"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+           android:layout_marginLeft="200dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="invisible"/>
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoo"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorwhite"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
